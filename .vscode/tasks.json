@@ -55,7 +55,7 @@
             "label": "go: test package",
             "command": "test",
             "args": [
-                "${"temp/input.html"}"
+                "${"/temp/input.html"}"
             ],
             "problemMatcher": [
                 "$go"
