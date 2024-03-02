@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/weather/weather.csproj",
+                "${metap}/weather/weather.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -49,6 +49,19 @@
             "appId": "myapp",
             "label": "daprd-down",
             "type": "daprd-down"
+        },
+        {
+            "type": "go",
+            "label": "go: test package",
+            "command": "test",
+            "args": [
+                "${"temp/input.html"}"
+            ],
+            "problemMatcher": [
+                "$go"
+            ],
+            "group": "test",
+            "detail": "cd /workspaces/kubernetes-in-codespaces; go test ${fileDirname}"
         }
     ]
 }
